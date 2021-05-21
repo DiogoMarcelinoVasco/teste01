@@ -44,7 +44,7 @@ $conn = new mysqli($servername, $username, $password, $dbname, $port);
    if($usuario == "''"){
     echo "
     <header class='w3-container w3-center' style='padding:228.5px 16px'>
-        <p class='w3-xlarge'>O ussuario esta vazio</p>
+        <p class='w3-xlarge'>O usuario esta vazio</p>
         <a href='index.php' class='w3-button w3-green'>Voltar</a>
     </header>
 ";
