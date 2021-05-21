@@ -11,7 +11,6 @@
     <title>teste01</title>
 </head>
 <style>
-    
 a{
   width: 10%;
   padding: 14px 20px;
@@ -72,8 +71,7 @@ echo "
         <a href='index.php' class='w3-button w3-green'>Voltar</a>
     </header>
 
-";}
-
+";
 ?>
 </body>
 </html>
