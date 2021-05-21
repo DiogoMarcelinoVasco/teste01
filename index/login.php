@@ -23,6 +23,9 @@ a{
 <?php
 $usuario = "'".$_POST["usuario"]."'";
 $senha = $_POST["senha"];
+if($usuario == ""){
+
+}
 $servername = "localhost";
 $username = "root";
 $password = "usbw";
@@ -38,20 +41,37 @@ $conn = new mysqli($servername, $username, $password, $dbname, $port);
     $sql01 = "SELECT C.idCliente,C.nome,C.senha FROM btmain.tbcliente C where nome = ".$usuario;
     $result01 = $conn->query($sql01);
     $row01 = $result01->fetch_assoc();
-    if($senha == $row01["senha"]){
+   if($usuario == "''"){
     echo "
-        <header class='w3-container w3-center' style='padding:228.5px 16px'>
-            <p class='w3-xlarge'>Usuario e senha correto</p>
-            <a href='index.php' class='w3-button w3-green'>Continuar</a>
-        </header>";
-
-    }else{
-        echo "
-        <header class='w3-container w3-center' style='padding:228.5px 16px'>
-        <p class='w3-xlarge'>Sua conta não esta certa</p>
+    <header class='w3-container w3-center' style='padding:228.5px 16px'>
+        <p class='w3-xlarge'>O ussuario esta vazio</p>
         <a href='index.php' class='w3-button w3-green'>Voltar</a>
-        </header>
-        ";}
+    </header>
+";
+}elseif($senha == ""){
+    echo "
+    <header class='w3-container w3-center' style='padding:228.5px 16px'>
+        <p class='w3-xlarge'>A senha esta vazia</p>
+        <a href='index.php' class='w3-button w3-green'>Voltar</a>
+    </header>
+
+";
+}elseif($senha == $row01["senha"]){
+    echo "
+    <header class='w3-container w3-center' style='padding:228.5px 16px'>
+    <p class='w3-xlarge'>Usuario e senha correto</p>
+    <a href='index.php' class='w3-button w3-green'>Continuar</a>
+    </header>";
+
+
+}else{
+echo "
+    <header class='w3-container w3-center' style='padding:228.5px 16px'>
+        <p class='w3-xlarge'>As informaçoes estão erradas</p>
+        <a href='index.php' class='w3-button w3-green'>Voltar</a>
+    </header>
+
+";}
 ?>
 </body>
 </html>
