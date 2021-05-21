@@ -49,7 +49,7 @@ div {
 <body>
 <br>
 <div class="center w3-container w3-center" style="width: 30%; "> 
-    <form action="login.php" method="post">
+    <form action="login.php">
     <label for="fname">Usuario</label>
     <input type="text" id="usuario" name="usuario" placeholder="Seu usuario">
     <label for="fname">Senha</label>
