@@ -21,25 +21,37 @@ a{
 </style>
 <body>
 <?php
-$usuario = $_POST["usuario"];
+$usuario = "'".$_POST["usuario"]."'";
 $senha = $_POST["senha"];
-if($senha == "10" && $usuario == "10"){
+$servername = "localhost";
+$username = "root";
+$password = "usbw";
+$dbname = "btmain";
+$port = "3308";
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname, $port);
+// Check connection
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+ //conexão com banco
+    $sql01 = "SELECT C.idCliente,C.nome,C.senha FROM btmain.tbcliente C where nome = ".$usuario;
+    $result01 = $conn->query($sql01);
+    $row01 = $result01->fetch_assoc();
+    if($senha == $row01["senha"]){
     echo "
-    <header class='w3-container w3-center' style='padding:228.5px 16px'>
-    <p class='w3-xlarge'>Usuario e senha correto</p>
-    <a href='index.php' class='w3-button w3-green'>Continuar</a>
-    </header>";
+        <header class='w3-container w3-center' style='padding:228.5px 16px'>
+            <p class='w3-xlarge'>Usuario e senha correto</p>
+            <a href='index.php' class='w3-button w3-green'>Continuar</a>
+        </header>";
 
-}else{
-echo "
-    <header class='w3-container w3-center' style='padding:228.5px 16px'>
+    }else{
+        echo "
+        <header class='w3-container w3-center' style='padding:228.5px 16px'>
         <p class='w3-xlarge'>Sua conta não esta certa</p>
         <a href='index.php' class='w3-button w3-green'>Voltar</a>
-    </header>
-
-";}
+        </header>
+        ";}
 ?>
-
-
 </body>
 </html>
