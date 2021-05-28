@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <title>Login</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="css/style.css">
   
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -22,7 +22,7 @@
 
 <nav class="navbar navbar-expand-sm bg-light">
   <ul class="navbar-nav">
-       <a class="navbar-brand" href="base.html">NutriSist</a>
+       <a class="navbar-brand" href="base.php">NutriSist</a>
   </ul>
 </nav>
 
@@ -51,11 +51,11 @@
           </p>
            
           <p>  
-            <a href="Clientes.html"><button type="button" class="btn btn-primary btn-lg btn-block">Logar</button></a>
+            <a href="Clientes.php"><button type="button" class="btn btn-primary btn-lg btn-block">Logar</button></a>
           </p>
            
           <p> Ainda não tem conta?
-            <a href="base.html">Cadastre-se</a>
+            <a href="base.php">Cadastre-se</a>
           </p>
 
         </form>
@@ -71,14 +71,14 @@
                 <div class="col-sm-3">
                     <h5>Inicio</h5>
                     <ul>
-                        <li><a href="base.html">Home</a></li>
-                        <li><a href="Login.html">Login</a></li>
+                        <li><a href="base.php">Home</a></li>
+                        <li><a href="Login.php">Login</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-3">
                     <h5>Sobre nós</h5>
                     <ul>
-                        <li><a href="base.html">Informações da Empresa</a></li>
+                        <li><a href="base.php">Informações da Empresa</a></li>
                         <li><a href="#">Contato</a></li>
                     </ul>
                 </div>
@@ -97,7 +97,7 @@
         </div>
         <div class="second-bar">
            <div class="container">
-            <h2 class="logo"><a href="base.html"> NutriSist </a></h2>
+            <h2 class="logo"><a href="base.php"> NutriSist </a></h2>
             <div class="social-icons">
               <a href="https://twitter.com/login?lang=pt" class="twitter"><i class="fa fa-twitter"></i></a>
               <a href="https://pt-br.facebook.com/" class="facebook"><i class="fa fa-facebook"></i></a>
