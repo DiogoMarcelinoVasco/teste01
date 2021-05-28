@@ -37,12 +37,14 @@ div {
   background-color: #f2f2f2;
   padding: 20px;
 }
+
 .center {
   margin: auto;
   width: 60%;
   border: 3px solid #73AD21;
   padding: 10px;
 }
+
 </style>
 <title>Teste</title>
 </head>
@@ -58,6 +60,5 @@ div {
   </form>
   </div> 
   </div>
-  
 </body>
 </html>
