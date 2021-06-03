@@ -85,7 +85,7 @@
   <button class="open-button" onclick="openForm()">Chat</button>
 
   <div class="chat-popup" id="myForm">
-    <form action="/action_page.html" class="form-container">
+    <form action="/action_page.php" class="form-container">
       <h1>Chat</h1>
   
       <label for="msg"><b>Message</b></label>
