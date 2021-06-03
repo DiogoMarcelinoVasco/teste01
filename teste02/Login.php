@@ -63,39 +63,56 @@
     </div>
   </div></p>
 
+  <button class="open-button" onclick="openForm()">Chat</button>
+
+  <div class="chat-popup" id="myForm">
+    <form action="/action_page.html" class="form-container">
+      <h1>Chat</h1>
+  
+      <label for="msg"><b>Message</b></label>
+      <textarea placeholder="Digitar sua mensagem aqui" name="msg" required></textarea>
+  
+      <button type="submit" class="btn">Enviar</button>
+      <button type="button" class="btn cancel" onclick="closeForm()">Voltar</button>
+    </form>
+  </div>
+  
+  <script>
+  function openForm() {
+    document.getElementById("myForm").style.display = "block";
+  }
+  
+  function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+  }
+  </script>
+  
 <div class="contente">
 </div>
     <footer id="myFooter">
         <div class="container">
             <div class="row">
-                <div class="col-sm-3">
+                <div class="col-sm-4">
                     <h5>Inicio</h5>
                     <ul>
                         <li><a href="base.php">Home</a></li>
                         <li><a href="Login.php">Login</a></li>
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <h5>Sobre nós</h5>
+               <div class="col-sm-4 info">
                     <ul>
-                        <li><a href="base.php">Informações da Empresa</a></li>
-                        <li><a href="#">Contato</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-3">
-                    <h5>Suporte</h5>
-                    <ul>
-                        <li><a href="#">Telefones</a></li>
-                        <li><a href="#">Chat</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-3 info">
-                    <h5>Informações</h5>
-                    <p>Somos o NutriSist e estamos aqui para ajudar em sua nutrição</p>
-                </div>
-            </div>
-        </div>
-        <div class="second-bar">
+                        <h5>Contato</h5>
+                        <p>nutrisist@gmail.com</p>
+                        <p>(17) 3322-0800</p>
+                      </ul>
+                  </div>
+                  <div class="col-sm-4 info">
+                      <h5>Informações</h5>
+                      <p>Estamos aqui para ajudar em seu trabalho</p>
+                  </div>
+              </div>
+          </div>
+        <div class="myFooter">
            <div class="container">
             <h2 class="logo"><a href="base.php"> NutriSist </a></h2>
             <div class="social-icons">
