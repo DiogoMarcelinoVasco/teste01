@@ -2,12 +2,21 @@
 <html>
 <head>
   <title>Clientes - NutriSist</title>
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="css/style-cliente.css">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="css/slyle-c2.css">
 </head>
 <body>
-
+<div class="header" id="myHeader">
+  <a href="#default" class="logo">NutriSist</a>
+  <div class="header-right">
+    <a href="#home">Inicio</a>
+    <a href="#contact">Consultar</a>
+    <a href="#contact">Agendar</a>
+    <a href="#about">Logar</a>
+  </div>
+</div>
 <!-- Grid principal da pagina -->
 <div align="center" class="principal">
 
@@ -171,10 +180,8 @@ echo "</div><!-- Atividades Fisica do cliente -->
 			$sql03 = "SELECT * FROM btmain.tbatividade where idcliente = ".$idCliente ."  order by atidate DESC";
 			$result03 = $conn->query($sql03);
 			while($row03 = $result03->fetch_assoc()){
-//fazer uma nova tabela no mysql 
-  		echo "
 
-  			
+  		echo "
   			<!-- Data da anotação -->
   			<div class='calendario'><i class='fa fa-calendar' style='font-size:24px'></i> ";
 		echo "".data($row03["atidate"])."</div>
@@ -191,6 +198,8 @@ echo "</div><!-- Atividades Fisica do cliente -->
 	</div>
 
 </div>
-
+<div class="footer">
+  <p>Footer</p>
+</div>
 </body>
 </html>
