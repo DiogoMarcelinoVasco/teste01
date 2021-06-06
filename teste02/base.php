@@ -22,30 +22,31 @@
 
 <nav class="navbar navbar-expand-sm bg-light">
   <ul class="navbar-nav">
-       <a class="navbar-brand" href="base.html">NutriSist</a>
+       <a class="navbar-brand" href="base.php">NutriSist</a>
+          <li class="nav-item">
+            <a id="l" class="nav-link" href="Login.php">Login</a>
+          </li>
   </ul>
 </nav>
 
 <div class="container-fluid">
   <div class="row">
-      <div class="col-6 offset-3">
-          <h1>Seja bem-vindo ao NutriSist</h1>
+      <div class="col-6 offset-2">
+          <h1>Seja Bem Vindo ao NutriSist</h1>
       </div>
   </div>
   <div class="row">
-      <div class="col-6  offset-3">
-        <h2></h2>
-          <h2>NutriSist é um site para facilitar seu trabalho de uma forma simples e completa</h2>
+      <div class="col-6 offset-2">
+          <h2>Site para nutrição</h2>
       </div>
   </div>
   <div class="row">
-      <div class="col-6 offset-3">
-        <h3>Não perca tempo e cadastre-se em nosso site </h3>
-          <!--<h3>👍( ͡❛ ͜ʖ ͡❛)👍</h3>-->
+      <div class="col-6 offset-2">
+          <h3>👍( ͡❛ ͜ʖ ͡❛)👍</h3>
       </div>
   </div>
  
-  <h4></h4> 
+  <p  align="center">
   <div class="container">
     <a class="links" id="paracadastro"></a>
 
@@ -53,12 +54,7 @@
 
       <div id="cadastro">
         <form method="post" action=""> 
-          <h10>Cadastro</h10>
-          <p> 
-            <label for="nome_cad">Seu Nome</label>
-            <input id="nome_cad" name="nome_cad" required="required" type="nome" placeholder="Fulano"/> 
-          </p>
-          
+          <h10>Cadastro</h10>  
           <p> 
             <label for="email_cad">Seu e-mail</label>
             <input id="email_cad" name="email_cad" required="required" type="email" placeholder="fulano@gmail.com"/> 
@@ -80,54 +76,37 @@
         </form>
       </div>
     </div>
-  </div>
+  </div></p>
     
-  <button class="open-button" onclick="openForm()">Chat</button>
-
-  <div class="chat-popup" id="myForm">
-    <form action="/action_page.php" class="form-container">
-      <h1>Chat</h1>
-  
-      <label for="msg"><b>Message</b></label>
-      <textarea placeholder="Digitar sua mensagem aqui" name="msg" required></textarea>
-  
-      <button type="submit" class="btn">Enviar</button>
-      <button type="button" class="btn cancel" onclick="closeForm()">Voltar</button>
-    </form>
-  </div>
-  
-  <script>
-  function openForm() {
-    document.getElementById("myForm").style.display = "block";
-  }
-  
-  function closeForm() {
-    document.getElementById("myForm").style.display = "none";
-  }
-  </script>
-  
 <div class="contente">
 </div>
     <footer id="myFooter">
         <div class="container">
             <div class="row">
-                <div class="col-sm-4">
+                <div class="col-sm-3">
                     <h5>Inicio</h5>
                     <ul>
                         <li><a href="base.php">Home</a></li>
                         <li><a href="Login.php">Login</a></li>
                     </ul>
                 </div>
-                <div class="col-sm-4 info">
+                <div class="col-sm-3">
+                    <h5>Sobre nós</h5>
                     <ul>
-                        <h5>Contato</h5>
-                        <p>nutrisist@gmail.com</p>
-                        <p>(17) 3322-0800</p>
+                        <li><a href="base.php">Informações da Empresa</a></li>
+                        <li><a href="#">Contato</a></li>
                     </ul>
                 </div>
-                <div class="col-sm-4 info">
+                <div class="col-sm-3">
+                    <h5>Suporte</h5>
+                    <ul>
+                        <li><a href="#">Telefones</a></li>
+                        <li><a href="#">Chat</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3 info">
                     <h5>Informações</h5>
-                    <p>Estamos aqui para ajudar em seu trabalho</p>
+                    <p>Somos o NutriSist e estamos aqui para ajudar em sua nutrição</p>
                 </div>
             </div>
         </div>

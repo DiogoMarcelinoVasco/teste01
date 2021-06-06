@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Quicksand', sans-serif ;
+}
+
+/* Grid principal do site */
+.principal {
+	display: grid;
+	grid-template-columns: 340px 660px;
+	grid-gap: 10px;
+	padding: 10px;
+	margin: 10px;
+	margin-top: 10px;
+	background-color: #FFFAFA;
+}
+
+.principal > div {
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.20);
+	border-radius: 10px 10px 10px 10px; 
+}
+
+
+/* Foto do cliente */
+.img_Cliente {
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	padding: 10px;
+}
+
+
+/* Nome do cliente */
+.nome_Cliente {
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.info_Cliente {
+	margin: 10px;
+}
+
+ul {
+	padding: 3px;
+}
+
+dt 
+{	display: block;
+	font-weight: bold;
+}
+
+dd {
+	display: block;
+	margin-inline-start: 20px;
+}
+
+ dl {
+	padding: 6px;
+	display: flex;
+	align-items: flex-start;
+	font-size: 15px;
+	line-height: 24px;
+}
+
+i {
+	margin-left: 10px;
+	margin-right: 20px;
+}
+
+.titulo {
+	font-size: 30px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 40px;
+	margin: 10px;
+	padding: 20px;
+	padding-bottom: 0;
+	margin-bottom: 0;
+}
+
+.corpo {
+	padding: 20px;
+	margin: 10px;
+	margin-left: 50px;
+	text-align: left;
+}
+
+.subTitulo, .calendario {
+	font-size: 20px;
+	font-weight: bold;
+	text-align: left;
+	line-height: 30px;
+}
+
+.subTitulo {
+	color: gray;
+	padding-bottom: 5px;
+	margin: 10px;
+	margin-top: 0;
+}
+
+.texto {
+	padding: 0px;
+	margin: 10px;
+	font-size: 15px;
+	line-height: 24px;
+	display: block;
+	width: 100%;
+}
