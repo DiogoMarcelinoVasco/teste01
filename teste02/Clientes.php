@@ -23,52 +23,9 @@
 	<!-- Canto esquerdo da pagina -->
 	<div>
 <?php 
-	function data ($date){
-	$M = new DateTime($date);
-	echo $M->format( 'd' );
-	echo " ";
-	$M = new DateTime($date);
-	$mm =$M->format( 'm' );
-	if($mm==1){
-		echo "Jan";
-	}elseif($mm==2){
-		echo "Fev";
-	}elseif($mm==3){
-		echo "Mar";
-	}elseif($mm==4){
-		echo "Abr";
-	}elseif($mm==5){
-		echo "Mai";
-	}elseif($mm==6){
-		echo "Jun";
-	}elseif($mm==7){
-		echo "Jul";
-	}elseif($mm==8){
-		echo "Ago";
-	}elseif($mm==9){
-		echo "Set";
-	}elseif($mm==10){
-		echo "Out";
-	}elseif($mm==11){
-		echo "Nov";
-	}elseif($mm==12){
-		echo "Dez";
-	}
-	$M = new DateTime($date);
-	echo $M->format( ' y' );
-}
+include_once("conexao.php");
+	
 		$idCliente= $_GET["idCliente"];
-$servername = "localhost";
-$username = "root";
-$password = "usbw";
-$dbname = "btmain";
-$port = "3308";
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname, $port);
-// Check connection
-    if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
-    }
     $sql01 = "SELECT * FROM btmain.tbcliente a inner join btmain.tbcomcli b on (a.idcliente = b.idcliente) where a.idCliente =".$idCliente;
     $result01 = $conn->query($sql01);
     $row01 = $result01->fetch_assoc();	
@@ -103,7 +60,7 @@ $conn = new mysqli($servername, $username, $password, $dbname, $port);
 			<ul>
 				<dl>
 					<dt><i class='fa fa-phone' style='font-size:24px'></i></dt>
-					<dd>(".$row01["dd"].") ".$row01["numero"]."</dd>
+					<dd> ".$row01["numero"]."</dd>
 				</dl>
 			</ul>
 
