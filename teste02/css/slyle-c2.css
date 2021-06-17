@@ -4,7 +4,9 @@
   padding: 12px 10px;
   background-color: #000;
 }
-
+body {
+  background-color: lightblue;
+}
 .header a {
   float: left;
   color: black;

@@ -244,7 +244,7 @@ body{
   input[type="submit"]{
     width: 100%!important;
     cursor: pointer;  
-    background: rgb(61, 157, 179);
+    background: black;
     padding: 8px 5px;
     color: #fff;
     font-size: 20px;  
@@ -259,7 +259,7 @@ body{
   }
    
   input[type="submit"]:hover{
-    background: #4ab3c6;
+    background: black;
   }
 
   .link{
@@ -294,9 +294,9 @@ body{
   }
    
   .link a:hover {
-    color: #39bfd7;
+    color: black;
     background: #f7f7f7;
-    border: 1px solid #4ab3c6;
+    border: 1px solid black;
   }
 
  #cadastro, 
@@ -382,9 +382,4 @@ body{
     }
   }
 /* Cadastro e login ^ */
-
-
-
-
-
 

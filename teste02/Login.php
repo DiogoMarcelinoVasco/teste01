@@ -7,16 +7,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-
-  <style>
-    body {
-      background-color: lightblue;
-    }
-    </style>
-
+  
 </head>
 <body>
 
@@ -35,7 +26,7 @@
       <div id="login">
         <form action="Logar.php" method="post">
           <h10>Login</h10>
-          <label for="email">Usuario</label>
+          <label for="email">E-mail</label>
           <input id="email" name="email" required="required" type="email" placeholder="fulano@gmail.com">
           <label for="senha">Senha</label>
           <input id="senha" name="senha" required="required" type="password" placeholder="ex. 1234">
